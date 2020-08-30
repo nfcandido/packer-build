@@ -9,6 +9,7 @@ _anchors:
   boot_command:
   - '<esc><esc><esc><enter><wait>'
   - '/casper/vmlinuz root=/dev/sr0 initrd=/casper/initrd autoinstall '
+  - 'net.ifnames=0 biosdevname=0 ip=dhcp '
   - 'ds=nocloud-net;s=http://{{ .HTTPIP }}:{{ .HTTPPort }}/{{ user `userdata_location` }}/'
   - '<enter>'
   boot_wait: '{{ user `boot_wait` }}'
