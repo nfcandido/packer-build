@@ -135,7 +135,7 @@ builders:
   disk_discard: ignore
   disk_image: false
   disk_interface: virtio-scsi
-  format: raw
+  #format: raw
   iso_skip_cache: false
   machine_type: pc
   name: qemu
