@@ -234,7 +234,7 @@ variables:
   boot_wait: 3s
   bundle_iso: 'false'
   communicator: ssh
-  country: CA
+  country: PT
   cpus: '1'
   description: 'Base box for x86_64 Ubuntu Focal Fossa 20.04.x LTS'
   disk_size: '7500'
@@ -252,9 +252,9 @@ variables:
   iso_path_external: http://releases.ubuntu.com/20.04
   iso_path_internal: http://myserver:8080/ubuntu
   keep_registered: 'false'
-  keyboard: us
-  language: en
-  locale: en_CA.UTF-8
+  keyboard: pt
+  language: pt
+  locale: en_US.UTF-8
   memory: '1024'
   min_vagrant_version: 2.2.10
   output_directory: 'build/{{ isotime "2006-01-02-15-04-05" }}'
@@ -277,7 +277,7 @@ variables:
   ssh_username: ghost
   start_retry_timeout: 5m
   system_clock_in_utc: 'true'
-  timezone: UTC
+  timezone: Europe/Lisbon
   userdata_location: template/ubuntu/20.04_focal
   vagrantfile_template: template/ubuntu/20.04_focal/base.vagrant
   version: 0.0.0
