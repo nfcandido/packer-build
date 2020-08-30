@@ -224,6 +224,14 @@ provisioners:
   only:
   - vbox
   - qemu
+- <<: *provisioner_shell_options
+  inline:
+  - rm -f /etc/machine-id
+  - cloud-init clean -s -l
+  only:
+  - vbox
+  - qemu
+
 #                  _       _     _
 # __   ____ _ _ __(_) __ _| |__ | | ___  ___
 # \ \ / / _` | '__| |/ _` | '_ \| |/ _ \/ __|
