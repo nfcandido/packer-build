@@ -227,7 +227,7 @@ provisioners:
   - qemu
 - <<: *provisioner_shell_options
   inline:
-  - rm -f /etc/machine-id
+  - truncate --size=0 /etc/machine-id
   - cloud-init clean -s -l
   only:
   - vbox
