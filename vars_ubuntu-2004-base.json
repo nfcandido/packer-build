@@ -1,6 +1,6 @@
 {
     "headless": "false",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "apt_cache_url": "http://software-cache.prd.cryogen.tk:3142/",
     "boot_wait": "3s"
 }
